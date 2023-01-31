@@ -1,0 +1,242 @@
+.home__description, .nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("./fonts/Gilroy-Bold.woff2") format("woff2"), url("./fonts/Gilroy-Bold.woff") format("woff"), url("./fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("./fonts/Gilroy-Medium.woff2") format("woff2"), url("./fonts/Gilroy-Medium.woff") format("woff"), url("./fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  color: #070707;
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+}
+
+.container {
+  max-width: 947px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+  text-align: center;
+}
+
+/* Header */
+.nav__list {
+  margin: 33px 0 0 0;
+  padding: 0 0 31px 0;
+  border-bottom: 1px solid #828282;
+}
+.nav__item {
+  list-style: none;
+}
+.nav__link {
+  text-decoration: none;
+  font-family: "Gilroy-Bold";
+  color: #828282;
+  transition: all 0.2s linear;
+}
+.nav__link:hover {
+  color: #070707;
+}
+
+/* Home */
+.home {
+  margin-bottom: 100px;
+}
+.home__description {
+  margin: 39px 0 49px 0;
+}
+.home__title {
+  font-family: "Gilroy-Bold";
+  font-size: 47px;
+  line-height: 59px;
+  color: #070707;
+}
+.home__nav {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+.home__link {
+  text-decoration: none;
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  color: #828282;
+}
+.home__link--active {
+  color: #070707;
+}
+.home__link:first-child::after {
+  content: "";
+  display: inline-block;
+  background-color: #070707;
+  width: 13px;
+  height: 2px;
+  margin-top: 5px;
+}
+.home__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* About */
+.about {
+  padding: 118px 0 108px 0;
+  background-color: #F6F6F6;
+}
+.about__title {
+  margin-bottom: 30px;
+}
+.about__text {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+.about__text--first {
+  margin-bottom: 0;
+}
+.about__text--second {
+  max-width: 100%;
+}
+
+/* Skills */
+.skills__title {
+  margin: 91px 0 69px 0;
+}
+.skills__text {
+  text-align: center;
+  margin-bottom: 83px;
+}
+.skills__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 110px;
+}
+.card__img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 88px;
+  margin-bottom: 27px;
+}
+.card__title {
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 40px;
+}
+
+.figma {
+  margin-top: 18px;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #F6F6F6;
+  padding: 112px 0 106px 0;
+}
+.portfolio__title {
+  margin-bottom: 47px;
+}
+.portfolio__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 44px;
+}
+.portfolio__link {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  color: #070707;
+  margin-bottom: 99px;
+}
+.portfolio__link:last-child {
+  margin-bottom: 0;
+}
+.portfolio__link:hover {
+  transform: scale(1.1);
+}
+.portfolio__image:hover {
+  transform: scale(1.1);
+}
+
+/* Contact */
+.contact {
+  padding: 112px 0 106px 0;
+}
+.contact__title {
+  margin: 114.24px 0 20.03px 0;
+}
+.contact__text {
+  text-align: center;
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.contact__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 37.94px;
+  width: 180.5px;
+  height: 42px;
+  color: #FFFFFF;
+  background-color: #070707;
+  border-radius: 20px;
+  border: none;
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+}
+.contact__icons {
+  display: flex;
+  justify-content: center;
+}
+.contact__icon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85.78px;
+  width: 342.18px;
+  height: 40.92px;
+}
+.contact__icon img {
+  width: 40.17px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 40.06px;
+}
+
+.icons__text {
+  font-family: "Gilroy-Medium";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  max-width: 243.01px;
+  margin: 0 auto;
+  margin-top: 45.06px;
+}/*# sourceMappingURL=style.css.map */
